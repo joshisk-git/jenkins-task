@@ -11,7 +11,7 @@ pipeline {
     stage("run") {
       steps {
         sh """
-          docker run -d --rm --name=hellocontainer -p 8087:80 hellojenkins
+          docker run -d --name=hellocontainer -p 8087:80 hellojenkins
         """
       }
     }
