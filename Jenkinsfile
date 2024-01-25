@@ -11,6 +11,8 @@ pipeline {
     stage("run") {
       steps {
         sh """
+          docker stop hellocontainer
+          docker rm hellocontainer
           docker run --name=hellocontainer -p 8087:80 hellojenkins
         """
       }
