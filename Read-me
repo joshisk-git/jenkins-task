@@ -1,0 +1,11 @@
+#python interpreter lai path indicate garna lai use huncha . yo script execute garna use huncha 
+#!/usr/bin/env python3
+#python maa http request garna ko lagi request library import garcha
+import requests
+#HTTP GET request to "https://www.google.com" and stores the response in the variable x.
+x = requests.get('https://www.google.com')
+
+if x.status_code == 200:
+ print('Congrats, build successful!')
+else:
+ print('failed!')
