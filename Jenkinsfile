@@ -11,7 +11,7 @@ pipeline {
     stage("run") {
       steps {
         sh """
-          docker run --rm --name-hellocontainer hellojenkins
+          docker run --rm --name=hellocontainer hellojenkins
         """
       }
     }
