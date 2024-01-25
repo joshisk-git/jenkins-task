@@ -1,5 +1,5 @@
 FROM python:3.7-alpine
+EXPOSE $PORT
 RUN pip install requests
 COPY hellojenkins.py /
-EXPOSE $PORT
 CMD ["python", "hellojenkins.py"]
